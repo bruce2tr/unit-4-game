@@ -54,30 +54,69 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Crystal Collector Game </title>
-    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="assets/css/style.css">
 </head>
 
 <body>
+    <div class="container">
 
-    <h1>Crystal Collector</h1>
+        <div class="jumbotron">
+            <h1>Crystal Collector</h1>
 
-    <div> Instructions as a placeholder. </div>
+            <div>
+                <p>You will be given a random number at the start of the game. </p>
+                <p>There are four crystals below. By clicking on a crystal you will add a specific amount of points to
+                    your total score. </p>
+                <p>You win the game by matching your total score to thee random number, you lose the game if your total
+                    score goes above the random number. </p>
+                <p>The value of each crystal is hidden from you until you click on it. </p>
+                <p>Each time the game starts, the game will change the values of each crystal. </p>
+            </div>
+        </div>
 
-    <div id="randomNumberDisplay"> Something to click!</div>
+        <div class=" row text-center">
+            <div class="col-md-12">
+            <div id="randomNumberDisplay"> Something to click!</div>
 
-    <div id="winsAndLosses">
-        <p id="winsID">Wins: 0</p>
-        <br>
-        <p id="lossesID">Losses: 0</p>
+            <div id="winsAndLosses">
+                <p id="winsID">Wins: 0</p>
+                <br>
+                <p id="lossesID">Losses: 0</p>
+            </div>
+        </div>
+        </div>
+        <!-- <button type="button" class="button btn btn-info" id="crystal_1">crystal 1</button>
+        <button type="button" class="button btn btn-info" id="crystal_2">crystal 2</button>
+        <button type="button" class="button btn btn-info" id="crystal_3">crystal 3</button>
+        <button type="button" class="button btn btn-info" id="crystal_4">crystal 4</button> -->
+
+
+
+        <div class="row text-center">
+            <div class="col-md-3">
+                <img class="img-responsive" src="assets/images/amatista-amethyst-beautiful-1121123.jpg" alt="image1"
+                    id="crystal_1">
+            </div>
+            <div class="col-md-3 img">
+                <img class="img-responsive" src="assets/images/art-blue-bright-312297.jpg" alt="image2" id="crystal_2">
+            </div>
+            <div class="col-md-3 img">
+                <img class="img-responsive" src="assets/images/clear-close-up-cold-434259.jpg" alt="image3"
+                    id="crystal_3">
+            </div>
+            <div class="col-md-3 img">
+                <img class="img-responsive" src="assets/images/close-up-idiomorphe-crystals-iron-56030.jpg" alt="image4"
+                    id="crystal_4">
+            </div>
+        </div>
+        <!-- </div> -->
+
+        <div id="totalScoreText">Your total score is: </div>
+        <div id="totalScore">0</div>
+
     </div>
-
-    <button type="button" class="button btn btn-info" id="crystal_1">crystal 1</button>
-    <button type="button" class="button btn btn-info" id="crystal_2">crystal 2</button>
-    <button type="button" class="button btn btn-info" id="crystal_3">crystal 3</button>
-    <button type="button" class="button btn btn-info" id="crystal_4">crystal 4</button>
-
-    <div>Your total score is: </div>
-    <div id="totalScore">0</div>
 
     <script src="https://code.jquery.com/jquery-3.4.1.min.js"
         integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>

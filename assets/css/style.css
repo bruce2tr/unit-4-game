@@ -1,0 +1,48 @@
+img {
+    max-width:100px;
+    height:auto;
+}
+
+body {
+    background-image: url("../images/milky-way-2695569_1920.jpg");
+    background-color: #cccccc;
+}
+
+.col-md-3 {
+
+/* width: 200px; */
+background-color: white;
+display: inline-block;
+padding-top: 10px;
+padding-bottom: 10px;
+}
+
+#randomNumberDisplay{
+    /* width: 30%; */
+    background-color: blueviolet;
+    /* float: left; */
+    /* display: inline; */
+}
+
+#winsAndLosses{
+    width: 20%;
+    background-color: yellow;
+    /* float: right; */
+    /* display: inline; */
+}
+
+.col-md-12{
+    display: inline-block;
+}
+
+#totalScoreText{
+    background-color: darkgreen;
+    margin: 10px;
+}
+
+#totalScore{
+    background-color: salmon;
+    margin: 5px;
+    padding: 1em;
+    margin-right: auto;
+}
